@@ -1,0 +1,29 @@
+/* ============================================================================ 
+  * # Primitives: Colors - https://www.tints.dev/palette/v1
+  * =========================================================================== */
+
+@theme {
+  --color-electric-lime-50: oklch(0.968 0.09 122.63);
+  --color-electric-lime-100: oklch(0.939 0.202 122.23);
+  --color-electric-lime-200: oklch(0.85 0.206 121.98);
+  --color-electric-lime-300: oklch(0.757 0.184 122.12);
+  --color-electric-lime-400: oklch(0.671 0.163 122.14);
+  --color-electric-lime-500: oklch(0.579 0.141 122.23);
+  --color-electric-lime-600: oklch(0.493 0.12 122.1);
+  --color-electric-lime-700: oklch(0.399 0.097 122);
+  --color-electric-lime-800: oklch(0.314 0.076 122.12);
+  --color-electric-lime-900: oklch(0.22 0.053 121.18);
+  --color-electric-lime-950: oklch(0.174 0.043 122.6);
+
+  --color-shark-50: oklch(0.958 0.002 247.73);
+  --color-shark-100: oklch(0.922 0.003 264.69);
+  --color-shark-200: oklch(0.836 0.006 264.59);
+  --color-shark-300: oklch(0.76 0.008 260.76);
+  --color-shark-400: oklch(0.672 0.013 264.5);
+  --color-shark-500: oklch(0.595 0.01 258.36);
+  --color-shark-600: oklch(0.517 0.01 264.5);
+  --color-shark-700: oklch(0.431 0.007 264.52);
+  --color-shark-800: oklch(0.353 0.007 274.83);
+  --color-shark-900: oklch(0.268 0.004 264.53);
+  --color-shark-950: oklch(0.231 0.004 264.51);
+}

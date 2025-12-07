@@ -1,0 +1,26 @@
+/* ============================================================================
+ * # Cheat - Hot fixed; needs to be cleaned up
+ * ============================================================================ */
+
+
+     .link--visible:after, .link:active:before, .link:hover:before {
+        left: 0;
+        right: auto;
+        width: 100%;
+    }
+
+     .link:after, .link:before {
+        content: "";
+        background-color: red;
+        display: block;
+        height: 1px;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: auto;
+        width: 0;
+        transition-property: width;
+        transition-timing-function: cubic-bezier(.135, .9, .15, 1);
+        transition-duration: .9s;
+    }

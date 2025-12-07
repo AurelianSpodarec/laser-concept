@@ -1,0 +1,235 @@
+/* ============================================================================ 
+* # Variables: Semantics 
+* ============================================================================= */
+
+@theme {
+  --color-primary: #d62323;
+
+  /* --------------------------------------------------------------------------
+  * # Base Fonts
+  * ------------------------------------------------------------------------ */
+  --font-primary: var(--font-inter);
+  --font-secondary: var(--font-space-grotesk);
+
+  --font-playfair: var(--font-playfair);
+  --font-space-grotesk: var(--font-space-grotesk);
+  --font-inter: var(--font-inter);
+
+
+  /* --------------------------------------------------------------------------
+  * # Body
+  * ------------------------------------------------------------------------ */
+
+  --text-body-xl-font-family: var(--font-secondary);
+  --text-body-xl-font-size-min: 1.25rem; /* 20px */
+  --text-body-xl-font-weight: normal;
+  --text-body-xl-line-height: normal;
+  --text-body-xl-letter-spacing: normal;
+  --text-body-xl-text-transform: none;
+
+  --text-body-lg-font-size-min: 1.125rem; /* 18px */
+  --text-body-lg-font-size-max: 1.125rem;
+  --text-body-lg-font-size-fluid: 1vw;
+  --text-body-lg-font-family: var(--font-secondary);
+  --text-body-lg-font-weight: normal;
+  --text-body-lg-line-height: 1.4;
+  --text-body-lg-letter-spacing: normal;
+  --text-body-lg-text-transform: none;
+
+  --text-body-font-family: var(--font-secondary);
+  --text-body-font-size: 1rem; /* 16px */
+  --text-body-font-weight: normal;
+  --text-body-line-height: 1.4;
+  --text-body-letter-spacing: normal;
+  --text-body-text-transform: none;
+
+  --text-body-sm-font-family: var(--font-secondary);
+  --text-body-sm-font-size: 0.875rem; /* 14px */
+  --text-body-sm-font-weight: normal;
+  --text-body-sm-line-height: normal;
+  --text-body-sm-letter-spacing: normal;
+  --text-body-sm-text-transform: none;
+
+  --text-body-xs-font-family: var(--font-secondary);
+  --text-body-xs-font-size: 0.75rem; /* 12px */
+  --text-body-xs-font-weight: normal;
+  --text-body-xs-line-height: normal;
+  --text-body-xs-letter-spacing: normal;
+  --text-body-xs-text-transform: none;
+
+  /* --------------------------------------------------------------------------
+   * Displays
+   * ------------------------------------------------------------------------ */
+
+  --text-display-min: 45px;
+  --text-display-max: 120px;
+  --text-display-fluid: 8vw;
+
+  --text-display-line-height-min: 50px;
+  --text-display-line-height-max: 115px;
+  --text-display-line-height-fluid: 8vw;
+
+  --text-display-font-family: var(--font-primary);
+  --text-display-font-weight: 700;
+  --text-display-letter-spacing: -4.2px;
+  --text-display-text-transform: none;
+
+  --text-display-mobile-font-family: var(--font-primary);
+  --text-display-mobile-font-weight: 700;
+  --text-display-mobile-letter-spacing: -1.25px;
+
+  /* --------------------------------------------------------------------------
+   * # Headlines
+   * ------------------------------------------------------------------------ */
+
+  --text-headline-3xl-font-size-min: 96px;
+  --text-headline-3xl-font-size-max: 140px;
+  --text-headline-3xl-font-size-fluid: 10vw;
+
+  --text-headline-3xl-line-height-min: 96px;
+  --text-headline-3xl-line-height-max: 140px;
+  --text-headline-3xl-line-height-fluid: 10vw;
+
+  --text-headline-3xl-font-family: var(--font-primary);
+  --text-headline-3xl-font-weight: 700;
+  --text-headline-3xl-letter-spacing: -4px;
+  --text-headline-3xl-text-transform: none;
+
+  --text-headline-3xl-mobile-font-family: var(--font-primary);
+  --text-headline-3xl-mobile-font-weight: 700;
+  --text-headline-3xl-mobile-letter-spacing: -1.5px;
+  --text-headline-3xl-mobile-text-transform: none;
+
+  /* 2XL Headline – Hero / Biggest Section */
+  --text-headline-2xl-font-size-min: 64px;
+  --text-headline-2xl-font-size-max: 86px;
+  --text-headline-2xl-font-size-fluid: 8vw;
+
+  --text-headline-2xl-line-height-min: 64px;
+  --text-headline-2xl-line-height-max: 86px;
+  --text-headline-2xl-line-height-fluid: 8vw;
+
+  --text-headline-2xl-font-family: var(--font-primary);
+  --text-headline-2xl-font-weight: 700;
+  --text-headline-2xl-letter-spacing: -2.5px;
+  --text-headline-2xl-text-transform: none;
+
+  --text-headline-2xl-mobile-font-family: var(--font-primary);
+  --text-headline-2xl-mobile-font-weight: 700;
+  --text-headline-2xl-mobile-letter-spacing: -1px;
+  --text-headline-2xl-mobile-text-transform: none;
+
+  /* XL Headline – Section Heading */
+  --text-headline-xl-font-size-min: 48px;
+  --text-headline-xl-font-size-max: 72px;
+  --text-headline-xl-font-size-fluid: 6vw;
+
+  --text-headline-xl-line-height-min: 48px;
+  --text-headline-xl-line-height-max: 72px;
+  --text-headline-xl-line-height-fluid: 6vw;
+
+  --text-headline-xl-font-family: var(--font-primary);
+  --text-headline-xl-font-weight: 700;
+  --text-headline-xl-letter-spacing: -1.5px;
+  --text-headline-xl-text-transform: none;
+
+  --text-headline-xl-mobile-font-family: var(--font-primary);
+  --text-headline-xl-mobile-font-weight: 700;
+  --text-headline-xl-mobile-letter-spacing: -0.5px;
+  --text-headline-xl-mobile-text-transform: none;
+
+  /* LG Headline – Subsection / Card Title */
+  --text-headline-lg-font-size-min: 36px;
+  --text-headline-lg-font-size-max: 54px;
+  --text-headline-lg-font-size-fluid: 4.5vw;
+
+  --text-headline-lg-line-height-min: 36px;
+  --text-headline-lg-line-height-max: 54px;
+  --text-headline-lg-line-height-fluid: 4.5vw;
+
+  --text-headline-lg-font-family: var(--font-primary);
+  --text-headline-lg-font-weight: 700;
+  --text-headline-lg-letter-spacing: -0.5px;
+  --text-headline-lg-text-transform: none;
+
+  --text-headline-lg-mobile-font-family: var(--font-primary);
+  --text-headline-lg-mobile-font-weight: 700;
+  --text-headline-lg-mobile-letter-spacing: 0px;
+  --text-headline-lg-mobile-text-transform: none;
+
+  /* MD Headline – Smaller Cards / Minor Headings */
+  --text-headline-md-font-size-min: 28px;
+  --text-headline-md-font-size-max: 42px;
+  --text-headline-md-font-size-fluid: 3vw;
+
+  --text-headline-md-line-height-min: 30px;
+  --text-headline-md-line-height-max: 44px;
+  --text-headline-md-line-height-fluid: 3vw;
+
+  --text-headline-md-font-family: var(--font-primary);
+  --text-headline-md-font-weight: 700;
+  --text-headline-md-letter-spacing: 0px;
+  --text-headline-md-text-transform: none;
+
+  --text-headline-md-mobile-font-family: var(--font-primary);
+  --text-headline-md-mobile-font-weight: 700;
+  --text-headline-md-mobile-letter-spacing: 0px;
+  --text-headline-md-mobile-text-transform: none;
+
+  /* SM Headline – Minor Section / Small Cards */
+  --text-headline-sm-font-size-min: 22px;
+  --text-headline-sm-font-size-max: 32px;
+  --text-headline-sm-font-size-fluid: 2.5vw;
+
+  --text-headline-sm-line-height-min: 24px;
+  --text-headline-sm-line-height-max: 34px;
+  --text-headline-sm-line-height-fluid: 2.5vw;
+
+  --text-headline-sm-font-family: var(--font-primary);
+  --text-headline-sm-font-weight: 700;
+  --text-headline-sm-letter-spacing: 0px;
+  --text-headline-sm-text-transform: none;
+
+  --text-headline-sm-mobile-font-family: var(--font-primary);
+  --text-headline-sm-mobile-font-weight: 700;
+  --text-headline-sm-mobile-letter-spacing: 0px;
+  --text-headline-sm-mobile-text-transform: none;
+
+  /* XS Headline – Tiny Headings / Labels */
+  --text-headline-xs-font-size-min: 18px;
+  --text-headline-xs-font-size-max: 24px;
+  --text-headline-xs-font-size-fluid: 2vw;
+
+  --text-headline-xs-line-height-min: 20px;
+  --text-headline-xs-line-height-max: 26px;
+  --text-headline-xs-line-height-fluid: 2vw;
+
+  --text-headline-xs-font-family: var(--font-primary);
+  --text-headline-xs-font-weight: 700;
+  --text-headline-xs-letter-spacing: 0px;
+  --text-headline-xs-text-transform: none;
+
+  --text-headline-xs-mobile-font-family: var(--font-primary);
+  --text-headline-xs-mobile-font-weight: 700;
+  --text-headline-xs-mobile-letter-spacing: 0px;
+  --text-headline-xs-mobile-text-transform: none;
+
+  /* 2XS Headline – Extra Small Labels / Metadata */
+  --text-headline-2xs-font-size-min: 16px;
+  --text-headline-2xs-font-size-max: 18px;
+  --text-headline-2xs-font-size-fluid: 1.5vw;
+
+  --text-headline-2xs-line-height-min: 18px;
+  --text-headline-2xs-line-height-max: 20px;
+  --text-headline-2xs-line-height-fluid: 1.5vw;
+
+  --text-headline-2xs-font-family: var(--font-primary);
+  --text-headline-2xs-font-weight: 700;
+  --text-headline-2xs-letter-spacing: 0px;
+  --text-headline-2xs-text-transform: none;
+
+  --text-headline-2xs-mobile-font-family: var(--font-primary);
+  --text-headline-2xs-mobile-font-weight: 700;
+  --text-headline-2xs-mobile-letter-spacing: 0px;
+  --text-headline-2xs-mobile-text-transform: none;
+}

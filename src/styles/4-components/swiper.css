@@ -1,0 +1,8 @@
+/* ============================================================================
+ * # Swiper
+ * ============================================================================ */
+
+ /* --swiper-wrapper-transition-timing-function: linear !important; */
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}

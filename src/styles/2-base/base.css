@@ -1,0 +1,78 @@
+/* ============================================================================
+ * # Base
+ * ============================================================================ */
+@layer base {
+  body {
+    font-family: var(--font-montserrat);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #333;
+  }
+
+  h1,
+  h2 {
+    font-family: var(--font-playfair);
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5.5vw, 6rem);
+    line-height: clamp(1rem, 2.5vw, 1rem);
+    letter-spacing: -2px;
+    font-family: var(--font-playfair);
+    /* font-size: clamp(
+      var(--text-headline-2xl-font-size-min),
+      var(--text-headline-2xl-font-size-fluid),
+      var(--text-headline-2xl-font-size-max)
+    ); */
+    line-height: clamp(
+      var(--text-headline-2xl-line-height-min),
+      var(--text-headline-2xl-line-height-fluid),
+      var(--text-headline-2xl-line-height-max)
+    );
+
+    font-weight: var(--text-headline-2xl-mobile-font-weight);
+    letter-spacing: var(--text-headline-2xl-mobile-letter-spacing);
+    text-transform: var(--text-headline-2xl-mobile-text-transform);
+
+    @variant md {
+      font-weight: var(--text-headline-2xl-font-weight);
+      letter-spacing: var(--text-headline-2xl-letter-spacing);
+      text-transform: var(--text-headline-2xl-text-transform);
+    }
+
+    @variant lg {
+      letter-spacing: -6px;
+    }
+  }
+
+  h2 {
+    font-weight: "medium";
+    /* @apply text-body-xl; */
+    /* composes: text-body-xl; */
+
+    /* @apply text-[clamp(2rem, 6vw, 4rem)]; */
+  }
+
+  /* h3 {} */
+
+  p {
+    font-family: var(--font-secondary);
+    font-weight: var(--text-body-lg-font-weight);
+    font-size: clamp(
+      var(--text-body-lg-min),
+      calc(var(--text-body-lg-min) + var(--text-body-md-fluid)),
+      var(--text-body-md-max)
+    );
+    line-height: var(--text-body-lg-line-height);
+    letter-spacing: var(--text-body-lg-letter-spacing);
+    text-transform: var(--text-body-lg-text-transform);
+
+    &:not(:last-child) {
+      margin-bottom: var(--spacing-md);
+
+      @variant md {
+        margin-bottom: var(--spacing-lg);
+      }
+    }
+  }
+}

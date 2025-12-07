@@ -1,0 +1,71 @@
+/* ============================================================================
+ * # Text Body
+ * ========================================================================== */
+ @layer utilities {
+
+   /* XL - 20px */
+   .text-body-xl {
+     font-size: clamp(var(--text-body-xl-font-size-min), var(--text-body-xl-font-size-fluid), var(--text-body-xl-font-size-max));
+     line-height: clamp(var(--text-body-xl-line-height-min), var(--text-body-xl-line-height-fluid), var(--text-body-xl-line-height-max));
+     letter-spacing: var(--text-body-xl-mobile-letter-spacing);
+     text-transform: var(--text-body-xl-mobile-text-transform);
+     
+     @variant md {
+       letter-spacing: var(--text-body-xl-letter-spacing);
+       text-transform: var(--text-body-xl-text-transform);
+      }
+    }
+    
+    /* LG - 18px */
+    .text-body-lg {
+      font-size: clamp(var(--text-body-lg-font-size-min), var(--text-body-lg-font-size-fluid), var(--text-body-lg-font-size-max));
+      line-height: clamp(var(--text-body-lg-line-height-min), var(--text-body-lg-line-height-fluid), var(--text-body-lg-line-height-max));
+      letter-spacing: var(--text-body-lg-mobile-letter-spacing);
+      text-transform: var(--text-body-lg-mobile-text-transform);
+      
+      @variant md {
+        letter-spacing: var(--text-body-lg-letter-spacing);
+        text-transform: var(--text-body-lg-text-transform);
+      }
+    }
+    
+    /* MD - 16px */
+    .text-body-md {
+      font-size: clamp(var(--text-body-md-font-size-min), var(--text-body-md-font-size-fluid), var(--text-body-md-font-size-max));
+      line-height: clamp(var(--text-body-md-line-height-min), var(--text-body-md-line-height-fluid), var(--text-body-md-line-height-max));
+      letter-spacing: var(--text-body-md-mobile-letter-spacing);
+      text-transform: var(--text-body-md-mobile-text-transform);
+      
+      @variant md {
+        letter-spacing: var(--text-body-md-letter-spacing);
+        text-transform: var(--text-body-md-text-transform);
+      }
+    }
+    
+    /* SM - 14px */
+    .text-body-sm {
+      font-size: clamp(var(--text-body-sm-font-size-min), var(--text-body-sm-font-size-fluid), var(--text-body-sm-font-size-max));
+      line-height: clamp(var(--text-body-sm-line-height-min), var(--text-body-sm-line-height-fluid), var(--text-body-sm-line-height-max));
+      letter-spacing: var(--text-body-sm-mobile-letter-spacing);
+      text-transform: var(--text-body-sm-mobile-text-transform);
+      
+      @variant md {
+        letter-spacing: var(--text-body-sm-letter-spacing);
+        text-transform: var(--text-body-sm-text-transform);
+      }
+    }
+    
+    /* XS - 12px */
+    .text-body-xs {
+      font-size: clamp(var(--text-body-xs-font-size-min), var(--text-body-xs-font-size-fluid), var(--text-body-xs-font-size-max));
+      line-height: clamp(var(--text-body-xs-line-height-min), var(--text-body-xs-line-height-fluid), var(--text-body-xs-line-height-max));
+      letter-spacing: var(--text-body-xs-mobile-letter-spacing);
+      text-transform: var(--text-body-xs-mobile-text-transform);
+      
+      @variant md {
+        letter-spacing: var(--text-body-xs-letter-spacing);
+        text-transform: var(--text-body-xs-text-transform);
+      }
+    }
+
+  }

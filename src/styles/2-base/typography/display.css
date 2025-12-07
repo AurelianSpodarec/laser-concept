@@ -1,0 +1,20 @@
+/* ============================================================================
+ * # Text Display
+ * ========================================================================== */
+
+ /* MD */
+.text-display {
+  font-family: var(--font-primary);
+  font-size: clamp(var(--text-display-min), var(--text-display-fluid), var(--text-display-max));
+  line-height: clamp(var(--text-display-line-height-min), var(--text-display-line-height-fluid), var(--text-display-line-height-max));
+
+  font-weight: var(--text-display-mobile-font-weight);
+  letter-spacing: var(--text-display-mobile-letter-spacing);
+  text-transform: var(--text-display-mobile-text-transform);
+
+  @variant md {
+    font-weight: var(--text-display-font-weight);
+    letter-spacing: var(--text-display-letter-spacing);
+    text-transform: var(--text-display-text-transform);
+  }
+}
