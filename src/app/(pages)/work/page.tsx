@@ -1,5 +1,6 @@
 import Container from "@/components/_layout/Container";
 import Section from "@/components/_layout/Section";
+import Link from "next/link";
 
 const dataWork = [
   {
@@ -18,7 +19,12 @@ function PageWork() {
   return (
     <>
       <div className="my-32">
-        <h1>World-class e-commerce products, idea to execution.</h1>
+
+        <Section>
+          <Container size="fluid">
+            <h1 className="max-w-[950px]">World-class e-commerce products, idea to execution.</h1>
+          </Container>
+        </Section>
 
         <Section>
           <Container size="fluid">
@@ -27,10 +33,10 @@ function PageWork() {
                 const isFull = i % 3 === 0; // every 3rd item (0,3,6,...)
 
                 return (
-<div
-  key={item.id}
-  className={`h-[900px] w-full ${i % 3 === 0 ? "md:col-span-2" : ""}`}
->
+                  <div
+                    key={item.id}
+                    className={`h-[900px] w-full ${i % 3 === 0 ? "md:col-span-2" : ""}`}
+                  >
 
                     <picture>
                       <img
@@ -42,6 +48,15 @@ function PageWork() {
                 );
               })}
             </div>
+          </Container>
+        </Section>
+
+        <Section>
+          <Container>
+            <h2>Laser cut projects </h2>
+            <Link href="/contact">
+              Start your project
+            </Link>
           </Container>
         </Section>
 

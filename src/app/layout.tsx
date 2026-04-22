@@ -8,7 +8,7 @@ import WebHeader from "./(pages)/_components/Header";
 import WebFooter from "./(pages)/_components/Footer";
 
 export const metadata: Metadata = {
-  title: "Perfactus",
+  title: "Laser Red",
   description: "",
 };
 

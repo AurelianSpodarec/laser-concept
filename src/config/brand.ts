@@ -1,5 +1,5 @@
 export const configBrand = {
-  name: "Laser Red",
+  name: "Laser",
   tagline: "Building the future",
   website: "https://perfactus.pl",
   established: "1995",

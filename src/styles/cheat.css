@@ -11,7 +11,7 @@
 
      .link:after, .link:before {
         content: "";
-        background-color: red;
+        background-color: #b82a2a;
         display: block;
         height: 1px;
         pointer-events: none;
@@ -24,3 +24,38 @@
         transition-timing-function: cubic-bezier(.135, .9, .15, 1);
         transition-duration: .9s;
     }
+
+
+
+
+    /* globals.css or inside <style jsx global>
+@keyframes chargeSweep {
+  0%   { transform: translateX(-100%); }
+  70%  { transform: translateX(100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes chargeGlow {
+  0%   { opacity: 0; transform: scale(0.95); }
+  70%  { opacity: 1; }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.animate-charge {
+  animation: chargeSweep 1.2s ease-out forwards,
+             chargeGlow 1.4s ease-out forwards;
+}
+
+/* Optional: only trigger once when in viewport */
+.animate-on-view {
+  view-timeline-name: --button;
+  view-timeline-axis: block;
+  animation-timeline: --button;
+  animation-range: entry 20% cover 30%;
+  animation-name: chargeSweep, chargeGlow;
+  animation-fill-mode: both;
+}
+
+.header-shadow {
+    box-shadow: 0 0 24px rgba(34, 42, 53, .06), 0 1px 1px rgba(0, 0, 0, .05), 0 0 0 1px rgba(34, 42, 53, .04), 0 0 4px rgba(34, 42, 53, .08), 0 16px 68px rgba(47, 48, 55, .05), inset 0 1px rgba(255, 255, 255, .1);
+}
